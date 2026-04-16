@@ -9,6 +9,7 @@
   "host_permissions": [
     "https://twitter.com/*",
     "https://x.com/*",
+    "https://adachidb.net/*",
     "https://adachi.2237yh.net/*"
   ],
   "background": {

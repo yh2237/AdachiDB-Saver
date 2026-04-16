@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     (async () => {
       const postUrl = request.url;
       try {
-        const response = await fetch('https://adachi.2237yh.net/api/posts/add', {
+        const response = await fetch('https://adachidb.net/api/posts/add', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
