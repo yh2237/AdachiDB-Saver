@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>AdachiDB Auto Saver</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/popup.css">
-    </head>
-    <body>
-        <p><label>API呼び出し回数:</label>
-        <span id="api-call-count" class="count-value">0</span></p>
-        <p><label>AdachiDB:</label>
-        <a href="https://adachidb.net" target="_blank">adachidb.net</a></p>
-        <script src="../js/popup.js"></script>
-    </body>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdachiDB Saver</title>
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+
+<body>
+
+    <dl class="stats" aria-label="保存結果">
+        <div>
+            <dt>追加</dt>
+            <dd id="api-call-count">0</dd>
+        </div>
+        <div>
+            <dt>登録済み</dt>
+            <dd id="duplicate-count">0</dd>
+        </div>
+        <div>
+            <dt>エラー</dt>
+            <dd id="error-count">0</dd>
+        </div>
+    </dl>
+
+    <p id="last-result" class="last-result" role="status">まだ送信していません。</p>
+
+    <footer>
+        <a href="https://adachidb.net" target="_blank" rel="noopener noreferrer">AdachiDBを開く</a>
+    </footer>
+
+    <script src="../js/popup.js"></script>
+</body>
+
 </html>
